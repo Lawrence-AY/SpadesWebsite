@@ -28,10 +28,9 @@ const server = createServer(async (request, response) => {
   }
 
   const filePath = requested === 'index.html' ? join(root, 'index.html')
-    : requested === 'app.js' ? join(root, 'app.js')
-      : requested === 'styles.css' ? join(root, 'styles.css')
-        : normalize(join(publicRoot, requested));
-  if (filePath !== root && !filePath.startsWith(publicRoot + sep) && !['index.html', 'app.js', 'styles.css'].includes(requested)) {
+    : requested === 'styles.css' ? join(root, 'styles.css')
+      : normalize(join(publicRoot, requested));
+  if (filePath !== root && !filePath.startsWith(publicRoot + sep) && !['index.html', 'styles.css'].includes(requested)) {
     response.writeHead(404).end('Not found');
     return;
   }

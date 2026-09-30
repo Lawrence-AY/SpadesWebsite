@@ -1,30 +1,34 @@
-# SpadesAtlas React
+# Spades Atlas
 
-A React + React Router site for Spades Atlas with four pages:
-Home, About Us, Services, and Contact. The About page includes the Mission and Ethics sections.
+A lightweight, responsive website for Spades Atlas Company Ltd. Built with browser-native JavaScript, HTML and CSS, with no runtime packages or bundler.
 
-## Run it
+## Requirements
 
-```bash
-npm install
+- Node.js 18 or newer
+- npm
+
+## Run locally
+
+```sh
 npm run dev
 ```
 
-Then open the printed local URL. Build for production with `npm run build`.
+Open the URL printed by the server (normally `http://localhost:5173`).
 
-## Structure
+## Build and preview
 
+```sh
+npm run build
+npm run preview
 ```
-src/
-  main.jsx           # React Router setup
-  App.jsx            # Route registration
-  index.css
-  components/
-    Navbar.jsx       # Top navigation with page links
-    Footer.jsx
-  pages/
-    Home.jsx
-    About.jsx         # Includes mission and ethics sections
-    Services.jsx
-    Contact.jsx
-```
+
+The static website is copied into `dist/`. The preview server serves that built directory.
+
+## Pages
+
+- `/` — overview and capabilities
+- `/services` — detailed service descriptions
+- `/about` — company, mission and ethics
+- `/contact` — project enquiry form
+
+The enquiry form opens a prepared message in the visitor's default mail application; it does not submit to a hosted form backend.

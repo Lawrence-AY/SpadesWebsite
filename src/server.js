@@ -21,7 +21,9 @@ const types = {
 
 const server = createServer(async (request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-  const requested = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
+  const requested = pathname === '/' ? 'index.html'
+    : pathname === '/favicon.ico' ? 'Logo.png'
+      : pathname.replace(/^\/+/, '');
   if (requested.split('/').some((part) => part.startsWith('.'))) {
     response.writeHead(404).end('Not found');
     return;

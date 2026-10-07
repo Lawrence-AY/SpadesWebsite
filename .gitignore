@@ -1,4 +1,4 @@
-node_modules/
+npnpnode_modules/
 dist/
 .env
 .env.*

@@ -96,7 +96,7 @@ function footer() {
     <div><span class="footer-label">EXPLORE</span><a href="/services">Our capabilities</a><a href="/about">The company</a><a href="/about#ethics">Ethics &amp; integrity</a></div>
     <div><span class="footer-label">FIND US</span><p>Katko Complex, G30<br>Old Mombasa Road<br>P.O. Box 40805-00100<br>Nairobi, Kenya</p></div>
     <div><span class="footer-label">GET IN TOUCH</span><a href="tel:+254790072225">+254 790 072 225</a><a href="mailto:info@spadesatlas.com">info@spadesatlas.com</a><p class="footer-code">SAM.gov UEI · MHT2DEDQAD3S<br>CAGE / NCAGE · SSHP2</p></div>
-  </div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Spades Atlas Company Ltd.</span><a href="#top">Back to top ↑</a><span>Global Supply Chain Solutions</span></div></footer>`;
+  </div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Spades Atlas Company Ltd.</span><span>Global Supply Chain Solutions</span></div></footer>`;
 }
 
 function home() {
@@ -121,7 +121,7 @@ function home() {
 function services() {
   return `${nav('services')}<main id="main"><section class="page-hero page-hero-green"><div><p class="eyebrow eyebrow-light"><i></i> WHAT WE DO</p><h1>Global supply chain.<br><em>Seamless operations.</em></h1><p>Supply chain solutions, operational management and technology working together to support complex requirements across markets.</p></div><span class="page-hero-index">CAPABILITIES <b>01–08</b></span></section>
     <section class="pillar-band"><p class="eyebrow">THREE PILLARS. ONE CONNECTED PARTNER.</p><div class="pillar-grid"><article><span>01 / SUPPLY CHAIN SOLUTIONS</span><h2>Source. Store. Move.</h2><p>Sourcing, warehousing, procurement and logistics, coordinated around operational needs.</p></article><article><span>02 / OPERATIONAL MANAGEMENT</span><h2>People &amp; resources.</h2><p>Fleets, deliveries, equipment, fuel, workforce and compliance brought into view.</p></article><article><span>03 / TECHNOLOGY &amp; TRACEABILITY</span><h2>Connected oversight.</h2><p>TruckSphere, ERP systems, reporting and operational visibility supporting informed action.</p></article></div></section>
-    <section class="connected-flow"><div class="flow-intro"><p class="eyebrow">THE OPERATING ECOSYSTEM</p><h2>Connected Operations.<br><em>Greater Visibility.</em></h2><p>Procurement, warehousing, transport, fuel, equipment and digital systems support one another across the operating cycle.</p></div><div class="flow-steps">${['Procurement','Warehouse','Fleet & transport','Delivery','Operational monitoring'].map((step,i)=>`<div class="flow-step"><span>0${i+1}</span><b>${step}</b>${i<4?'<i>→</i>':''}</div>`).join('')}</div><div class="flow-systems"><span>ERP <small>Enterprise and business processes</small></span><b>+</b><span>TruckSphere <small>Fleet, logistics and delivery traceability</small></span></div></section>
+    <section class="connected-flow ecosystem-live" data-ecosystem data-active-node="0"><div class="flow-intro"><p class="eyebrow">THE OPERATING ECOSYSTEM</p><h2>The Living Supply Chain.<br><em>Connected at every handoff.</em></h2><p>Materials, vehicles, resources and operational information move together across an accountable network.</p></div><div class="eco-network-wrap"><svg class="eco-network" viewBox="0 0 1100 270" aria-hidden="true"><defs><linearGradient id="eco-line" x1="0" x2="1"><stop stop-color="#789baa" stop-opacity=".28"/><stop offset=".55" stop-color="#a8c3cd" stop-opacity=".8"/><stop offset="1" stop-color="#789baa" stop-opacity=".3"/></linearGradient><filter id="eco-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path class="eco-link is-lit" data-edge="0-1" d="M165 65 C270 35 445 35 550 65"/><path class="eco-link" data-edge="1-2" d="M550 65 C675 35 820 35 935 65"/><path class="eco-link" data-edge="2-3" d="M165 65 C115 110 115 165 165 215"/><path class="eco-link" data-edge="2-4" d="M550 65 C600 115 600 165 550 215"/><path class="eco-link" data-edge="3-4" d="M935 65 C990 115 990 165 935 215"/><path class="eco-link" data-edge="2-5" d="M165 215 C270 245 445 245 550 215"/><path class="eco-link" data-edge="4-5" d="M550 215 C675 245 820 245 935 215"/><path class="eco-link" data-edge="1-5" d="M550 65 C680 110 815 165 935 215"/><g filter="url(#eco-glow)"><circle class="eco-particle particle-1" r="3.1"><animateMotion dur="6s" repeatCount="indefinite" path="M165 65 C270 35 445 35 550 65"/></circle><circle class="eco-particle particle-2" r="3.1"><animateMotion dur="6s" repeatCount="indefinite" path="M550 65 C675 35 820 35 935 65"/></circle><circle class="eco-particle particle-3" r="3.1"><animateMotion dur="7s" repeatCount="indefinite" path="M165 65 C115 110 115 165 165 215"/></circle><circle class="eco-particle particle-4" r="3.1"><animateMotion dur="5s" repeatCount="indefinite" path="M550 65 C600 115 600 165 550 215"/></circle><circle class="eco-particle particle-5" r="3.1"><animateMotion dur="6s" repeatCount="indefinite" path="M935 65 C990 115 990 165 935 215"/></circle><circle class="eco-particle particle-6" r="3.1"><animateMotion dur="7s" repeatCount="indefinite" path="M165 215 C270 245 445 245 550 215"/></circle><circle class="eco-particle particle-7" r="3.1"><animateMotion dur="5s" repeatCount="indefinite" path="M550 215 C675 245 820 245 935 215"/></circle><circle class="eco-particle particle-8" r="3.1"><animateMotion dur="6s" repeatCount="indefinite" path="M550 65 C680 110 815 165 935 215"/></g></svg><div class="eco-nodes"><button type="button" class="network-node node-1" data-eco-node="0" aria-pressed="true"><span class="node-index">01</span><b>PROCUREMENT</b><small>SUPPLY PLANNING</small><i></i></button><button type="button" class="network-node node-2" data-eco-node="1" aria-pressed="false"><span class="node-index">02</span><b>WAREHOUSE</b><small>INVENTORY &amp; DISPATCH</small><i></i></button><button type="button" class="network-node node-3" data-eco-node="2" aria-pressed="false"><span class="node-index">03</span><b>FLEET &amp; TRANSPORT</b><small>FLEET VISIBILITY</small><i></i></button><button type="button" class="network-node node-4" data-eco-node="3" aria-pressed="false"><span class="node-index">04</span><b>FUEL OPERATIONS</b><small>RESOURCE CONTROL</small><i></i></button><button type="button" class="network-node node-5" data-eco-node="4" aria-pressed="false"><span class="node-index">05</span><b>EQUIPMENT &amp; RESOURCES</b><small>ASSET UTILIZATION</small><i></i></button><button type="button" class="network-node node-6" data-eco-node="5" aria-pressed="false"><span class="node-index">06</span><b>DELIVERY &amp; TRACEABILITY</b><small>MOVEMENT RECORDS</small><i></i></button></div></div><div class="eco-context" aria-live="polite"><div class="eco-context-copy"><span class="eco-overline" data-eco-overline>01 / PROCUREMENT</span><h3 data-eco-title>Procurement</h3><p data-eco-description>Supplier management, purchasing and sourcing, purchase orders and supply planning.</p></div><div class="eco-context-meta"><span>CONNECTED SYSTEMS</span><b data-eco-platform>ERP and TruckSphere</b></div></div><div class="eco-tech-layer"><article class="tech-platform erp-platform is-connected" data-platform="erp"><span class="tech-platform-tag">ENTERPRISE OPERATIONS</span><h3>ERP</h3><p>Procurement, inventory, vendors, financial records, resources, workflows and reporting.</p><div class="tech-chips"><i>Purchasing</i><i>Inventory</i><i>Vendors</i><i>Resources</i><i>Reporting</i></div></article><div class="tech-bridge" aria-hidden="true"><span></span><b>COMPLEMENTARY SYSTEMS</b><span></span></div><article class="tech-platform truck-platform is-connected" data-platform="truck"><span class="tech-platform-tag">LOGISTICS INTELLIGENCE</span><h3>TruckSphere</h3><p>Vehicles, drivers, dispatch, trip management, weighbridge records and delivery traceability.</p><div class="tech-chips"><i>Fleet</i><i>Drivers</i><i>Dispatch</i><i>Trips</i><i>Delivery</i></div></article></div><div class="eco-simulation"><div><span class="eco-overline">ILLUSTRATIVE OPERATIONAL SIMULATION</span><p data-sim-status>Follow a material movement from purchasing through confirmed delivery.</p></div><div class="sim-progress" role="progressbar" aria-label="Simulation progress" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><i></i></div><span class="sim-step-label" data-sim-step>READY</span><button type="button" class="sim-button" data-sim-start>EXPLORE THE ECOSYSTEM</button></div></section>
     <section class="service-flow">${serviceItems.map((s, i) => `<article id="service-${i + 1}" class="service-detail ${i % 2 ? 'service-reverse' : ''}"><div class="service-photo"><img src="${s.image}" alt="${s.title}" loading="lazy"><span class="photo-number">${s.number}</span></div><div class="service-description"><p class="eyebrow">${s.eyebrow} <span> / ${s.number}</span></p><h2>${s.title}</h2><p>${s.text}</p><a class="text-link" href="/contact?service=${encodeURIComponent(s.title)}">Discuss this capability ${arrow}</a></div></article>`).join('')}</section>
     <section class="intelligence-section"><div class="intelligence-heading"><p class="eyebrow eyebrow-light">TECHNOLOGY &amp; TRACEABILITY</p><h2>The Intelligence Behind<br><em>Every Operation.</em></h2><p>Digital systems connect procurement, warehouse, fleet, delivery and management activity for a clearer operational picture.</p></div><div class="ecosystem-visual"><div class="eco-orbit orbit-a"></div><div class="eco-orbit orbit-b"></div><div class="eco-core"><span>SPADES ATLAS</span><b>Connected<br>Operations</b><small>ILLUSTRATIVE SYSTEMS VIEW</small></div><div class="eco-node node-1"><i>01</i><b>Procurement</b><small>Orders · vendors</small></div><div class="eco-node node-2"><i>02</i><b>Warehouse</b><small>Inventory · dispatch</small></div><div class="eco-node node-3"><i>03</i><b>Fleet &amp; delivery</b><small>Vehicles · traceability</small></div><div class="eco-node node-4"><i>04</i><b>Project operations</b><small>People · equipment</small></div><div class="eco-node node-5"><i>05</i><b>Management</b><small>ERP · reporting</small></div><div class="eco-platforms"><span>TruckSphere <small>Fleet &amp; logistics visibility</small></span><b>+</b><span>ERP systems <small>Integrated process management</small></span></div></div></section>
     <section class="technology-detail"><div><p class="eyebrow">DIGITAL LOGISTICS &amp; TRACEABILITY</p><h2>Every movement.<br><em>Accounted for.</em></h2><p>TruckSphere connects physical logistics activity with digital records. It supports fleet and driver management, vendor and vehicle records, trip activity, dispatch management, origin and destination visibility, delivery confirmation and timestamps. Weighbridge integrations can capture weighing records and digital tickets, match them with vendor and driver information, and reduce manual entry while strengthening material movement accountability.</p><div class="tech-list">${technologyCapabilities.map(([title, body]) => `<article><b>${title}</b><span>${body}</span></article>`).join('')}</div></div><aside class="trucksphere-panel"><div class="panel-top"><span><i></i> TRUCKSPHERE</span><small>ILLUSTRATIVE INTERFACE</small></div><div class="route-visual"><div class="route-grid"></div><svg viewBox="0 0 500 250" role="img" aria-label="Illustrative route connecting warehouse, vehicle and delivery"><path d="M42 195 C112 182 104 72 206 92 S322 224 389 144 428 92 465 58"/><circle cx="42" cy="195" r="7"/><circle cx="206" cy="92" r="7"/><circle cx="389" cy="144" r="7"/><circle cx="465" cy="58" r="7"/></svg><span class="route-label route-start">WAREHOUSE</span><span class="route-label route-mid">IN TRANSIT</span><span class="route-label route-end">DELIVERY</span></div><div class="panel-status"><span><i></i> Operational visibility</span><b>Vehicle · Driver · Delivery</b></div><div class="record-strip"><span>DISPATCH RECORD <b>Origin → destination</b></span><span>WEIGHBRIDGE <b>Digital ticket · vendor · driver</b></span><span>DELIVERY <b>Confirmation · timestamp</b></span></div><p>Illustrative interface — no live operational data shown.</p></aside></section>
@@ -133,7 +133,7 @@ function about() {
   return `${nav('about')}<main id="main"><section class="page-hero page-hero-paper"><div><p class="eyebrow"><i></i> THE COMPANY</p><h1>Global supply chain.<br><em>Seamless operations.</em></h1><p>Spades Atlas brings supply chain solutions, operational expertise and technology together to manage complex requirements across markets.</p></div><span class="page-hero-index">SUPPLY CHAIN <b>· OPERATIONS</b></span></section>
     <section class="about-lead"><p class="eyebrow">OUR ROLE</p><div><h2>A connected partner for complex operations.</h2><p>From sourcing and warehousing to logistics, workforce, fleet, equipment and compliance, Spades Atlas coordinates the services that help businesses move projects forward. We pair operational expertise with digital systems for visibility, traceability and control.</p></div></section>
     <section class="about-story"><div class="story-label"><p class="eyebrow">OUR APPROACH</p><span>01 / CONNECTED OPERATIONS</span></div><div><h2>Built around how operations fit together.</h2><p>Procurement, logistics, people and compliance can become disconnected as requirements grow. Spades Atlas coordinates these functions under one management structure so teams can work with greater clarity.</p><p>Our established warehouse facility and operational knowledge support this broader supply chain and operations approach. Digital tools such as TruckSphere and ERP systems help connect activity with operational information.</p></div></section>
-    <section class="about-image"><img src="/site.png" alt="Materials ready for project transport" loading="lazy"><div><span>OPERATIONAL EXCELLENCE</span><b>Connected Operations</b><span>Supply Chain · Logistics · Technology</span></div></section>
+    <section class="about-image"><img src="/Site.png" alt="Materials ready for project transport" loading="lazy"><div><span>OPERATIONAL EXCELLENCE</span><b>Connected Operations</b><span>Supply Chain · Logistics · Technology</span></div></section>
     <section class="difference"><div class="difference-heading"><p class="eyebrow eyebrow-light">HOW WE WORK</p><h2>Connected services.<br><em>Clear accountability.</em></h2></div><div class="difference-list"><article><span>01</span><div><h3>One partner, across the chain.</h3><p>Sourcing, warehousing, fleet, delivery, workforce and compliance coordinated through one relationship.</p></div></article><article><span>02</span><div><h3>Positioned for the handoff.</h3><p>Our Grade A facility at Katko Complex, G30, is close to the SGR Nairobi Terminus and Jomo Kenyatta International Airport.</p></div></article><article><span>03</span><div><h3>Fluent in applicable requirements.</h3><p>We translate labour, tax, safety and environmental requirements into policies and operating guidance teams can use.</p></div></article><article><span>04</span><div><h3>Technology supporting operations.</h3><p>TruckSphere supports fleet and logistics traceability, while ERP systems help connect business processes and management information.</p></div></article></div></section>
     <section class="mission" id="mission"><p class="eyebrow">OUR MISSION <span>/ 02</span></p><h2>Simplify complex operations<br><em>through connected expertise.</em></h2><p>We bring supply chain services, operational management and technology together to support efficient, accountable execution.</p></section>
     <section class="ethics" id="ethics"><div class="ethics-intro"><p class="eyebrow">ETHICS &amp; INTEGRITY <span>/ 03</span></p><h2>Good work starts<br>with doing it right.</h2><p>Our relationships with clients, employees and the environment are guided by a small set of commitments.</p></div><div class="principle-list">${principles.map(([title, body], i) => `<article><span>0${i + 1}</span><div><h3>${title}</h3><p>${body}</p></div></article>`).join('')}</div></section>
@@ -154,6 +154,7 @@ function render() {
   document.querySelector('#site').innerHTML = view;
   document.title = path === '/services' ? 'Capabilities — Spades Atlas' : path === '/about' ? 'About — Spades Atlas' : path === '/contact' ? 'Contact — Spades Atlas' : 'Spades Atlas — Project delivery, on the ground';
   observeReveals();
+  observeEcosystem();
   if (location.hash) requestAnimationFrame(() => document.querySelector(location.hash)?.scrollIntoView({ behavior: 'smooth' }));
 }
 
@@ -169,30 +170,79 @@ function observeReveals() {
   items.forEach((item) => observer.observe(item));
 }
 
-document.addEventListener('click', (event) => {
-  const toggle = event.target.closest('.menu-toggle');
-  if (toggle) {
-    const header = toggle.closest('.header');
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    toggle.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-    toggle.innerHTML = icon(expanded ? 'menu' : 'close', 23);
-    header.classList.toggle('nav-open', !expanded);
+function observeEcosystem() {
+  const section = document.querySelector('[data-ecosystem]');
+  if (!section) return;
+  const svg = section.querySelector('.eco-network');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduced || !('IntersectionObserver' in window)) {
+    section.classList.add('is-visible');
+    svg.pauseAnimations?.();
     return;
   }
-  const link = event.target.closest('a[href]');
-  if (!link) return;
-  const url = new URL(link.href, location.href);
-  if (url.origin !== location.origin || link.target || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-  if (url.pathname === location.pathname && url.hash) return;
-  event.preventDefault();
-  history.pushState({}, '', url.pathname + url.search + url.hash);
-  render();
-  if (!url.hash) window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-  document.querySelector('.header')?.classList.remove('nav-open');
-});
+  const observer = new IntersectionObserver(([entry]) => {
+    section.classList.toggle('is-visible', entry.isIntersecting);
+    if (entry.isIntersecting) svg.unpauseAnimations?.();
+    else svg.pauseAnimations?.();
+  }, { threshold: 0.16 });
+  observer.observe(section);
+}
 
-window.addEventListener('popstate', render);
+const ecosystemData = [
+  ['Procurement','Supplier management, purchasing and sourcing, purchase orders and supply planning.','ERP + TruckSphere','erp'],
+  ['Warehouse','Inventory management, material receiving, storage and stock visibility, allocation and dispatch.','ERP + TruckSphere','both'],
+  ['Fleet & Transport','Vehicle and driver management, fleet deployment, trip and route monitoring, delivery coordination.','TruckSphere','truck'],
+  ['Fuel Operations','Diesel storage, fuel dispensing and allocation, consumption monitoring and reconciliation.','ERP + TruckSphere','both'],
+  ['Equipment & Resources','Project equipment, machinery deployment, resource allocation and equipment utilization.','ERP','erp'],
+  ['Delivery & Traceability','Dispatch management, delivery confirmation, weighbridge records, movement tracking and accountability.','TruckSphere','truck'],
+];
+const simulation = [
+  [0,'Purchase request initiated','ERP records the requirement and supplier order.'],
+  [1,'Materials received','Warehouse receipt and inventory records are updated.'],
+  [1,'Materials allocated','Stock is allocated for the planned movement.'],
+  [2,'Vehicle and driver assigned','Fleet deployment and trip details are prepared in TruckSphere.'],
+  [3,'Fuel allocation recorded','Fuel issued to the assigned vehicle is recorded for reconciliation.'],
+  [2,'Vehicle dispatched','Dispatch activity and the planned route are recorded.'],
+  [5,'Movement and weighing recorded','Movement events and weighbridge records are captured where applicable.'],
+  [5,'Delivery confirmed','Delivery confirmation closes the illustrative movement.'],
+  [5,'Records available for reporting','Operational records are ready for review in the relevant systems.'],
+];
+let simulationTimer;
+const selectEcoNode = (section,index) => {
+  const data=ecosystemData[index];if(!data)return;
+  section.dataset.activeNode=String(index);
+  section.querySelectorAll('[data-eco-node]').forEach((node)=>{const nodeIndex=Number(node.dataset.ecoNode);const active=nodeIndex===index;const linked=Array.from(section.querySelectorAll('.eco-link')).some((edge)=>{const ends=edge.dataset.edge.split('-').map(Number);return ends.includes(index)&&ends.includes(nodeIndex);});node.classList.toggle('is-active',active);node.classList.toggle('is-muted',!active&&!linked);node.setAttribute('aria-pressed',String(active));});
+  section.querySelectorAll('.eco-link').forEach((edge)=>{const [a,b]=edge.dataset.edge.split('-').map(Number);edge.classList.toggle('is-lit',a===index||b===index);});
+  section.querySelector('[data-eco-overline]').textContent='0'+(index+1)+' / '+data[0].toUpperCase();
+  section.querySelector('[data-eco-title]').textContent=data[0];
+  section.querySelector('[data-eco-description]').textContent=data[1];
+  section.querySelector('[data-eco-platform]').textContent=data[2];
+  section.querySelector('[data-platform="erp"]').classList.toggle('is-connected',data[3]==='erp'||data[3]==='both');
+  section.querySelector('[data-platform="truck"]').classList.toggle('is-connected',data[3]==='truck'||data[3]==='both');
+};
+const updateSimulation = (section,index) => {
+  const [node,title,detail]=simulation[index];selectEcoNode(section,node);
+  section.querySelector('[data-sim-status]').textContent=title+'. '+detail;
+  section.querySelector('[data-sim-step]').textContent='STEP '+(index+1)+' / '+simulation.length;
+  const progress=section.querySelector('.sim-progress');progress.setAttribute('aria-valuenow',String(index+1));progress.style.setProperty('--sim-progress',((index+1)/simulation.length*100)+'%');
+};
+
+document.addEventListener('click',(event)=>{
+  const ecoNode=event.target.closest('[data-eco-node]');
+  if(ecoNode){const section=ecoNode.closest('[data-ecosystem]');selectEcoNode(section,Number(ecoNode.dataset.ecoNode));return;}
+  const simButton=event.target.closest('[data-sim-start]');
+  if(simButton){const section=simButton.closest('[data-ecosystem]');clearInterval(simulationTimer);simButton.textContent='RESTART SIMULATION';let step=0;updateSimulation(section,step);simulationTimer=setInterval(()=>{step++;if(step>=simulation.length){clearInterval(simulationTimer);simButton.textContent='RESTART SIMULATION';section.querySelector('[data-sim-step]').textContent='COMPLETE';return;}updateSimulation(section,step);},1450);return;}
+  const toggle=event.target.closest('.menu-toggle');
+  if(toggle){const header=toggle.closest('.header');const expanded=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!expanded));toggle.setAttribute('aria-label',expanded?'Open navigation':'Close navigation');toggle.innerHTML=icon(expanded?'menu':'close',23);header.classList.toggle('nav-open',!expanded);return;}
+  const link=event.target.closest('a[href]');if(!link)return;const url=new URL(link.href,location.href);if(url.origin!==location.origin||link.target||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;if(url.pathname===location.pathname&&url.hash)return;event.preventDefault();history.pushState({},'',url.pathname+url.search+url.hash);render();if(!url.hash)window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});document.querySelector('.header')?.classList.remove('nav-open');
+});
+document.addEventListener('pointerover',(event)=>{
+  if(event.pointerType!=='mouse')return;
+  const node=event.target.closest('[data-eco-node]');
+  if(node)selectEcoNode(node.closest('[data-ecosystem]'),Number(node.dataset.ecoNode));
+});
+window.addEventListener('popstate',render);
+
 document.addEventListener('submit', (event) => {
   if (!event.target.matches('.contact-form')) return;
   event.preventDefault();

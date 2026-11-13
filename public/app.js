@@ -79,7 +79,7 @@ const serviceHref = (index) => `/services#service-${index + 1}`;
 
 function nav(active = '') {
   return `<header class="header" id="top">
-    <a class="brand" href="/" aria-label="Spades Atlas home"><img src="/Logo.png" alt="Spades Atlas logo" /><span class="brand-note">SUPPLY CHAIN<small>&amp; OPERATIONS</small></span></a>
+    <a class="brand" href="/" aria-label="Spades Atlas home"><img src="/4.png" alt="Spades Atlas logo" /><span class="brand-note">SUPPLY CHAIN<small>&amp; OPERATIONS</small></span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">${icon('menu', 23)}</button>
     <nav class="nav" aria-label="Main navigation">
       <a class="nav-link ${active === 'home' ? 'is-active' : ''}" href="/">Overview</a>
@@ -92,7 +92,7 @@ function nav(active = '') {
 
 function footer() {
   return `<footer class="footer"><div class="footer-main">
-    <div class="footer-brand"><a class="brand brand-light" href="/" aria-label="Spades Atlas home"><img src="/Logo.png" alt="Spades Atlas logo" /><span class="brand-note">SUPPLY CHAIN<small>&amp; OPERATIONS</small></span></a><p>Global supply chain solutions. Seamless operations.</p></div>
+    <div class="footer-brand"><a class="brand brand-light" href="/" aria-label="Spades Atlas home"><img src="/4.png" alt="Spades Atlas logo" /><span class="brand-note">SUPPLY CHAIN<small>&amp; OPERATIONS</small></span></a><p>Global supply chain solutions. Seamless operations.</p></div>
     <div><span class="footer-label">EXPLORE</span><a href="/services">Our capabilities</a><a href="/about">The company</a><a href="/about#ethics">Ethics &amp; integrity</a></div>
     <div><span class="footer-label">FIND US</span><p>Katko Complex, G30<br>Old Mombasa Road<br>P.O. Box 40805-00100<br>Nairobi, Kenya</p></div>
     <div><span class="footer-label">GET IN TOUCH</span><a href="tel:+254790072225">+254 790 072 225</a><a href="mailto:info@spadesatlas.com">info@spadesatlas.com</a><p class="footer-code">SAM.gov UEI · MHT2DEDQAD3S<br>CAGE / NCAGE · SSHP2</p></div>
